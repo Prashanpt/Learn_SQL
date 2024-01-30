@@ -28,6 +28,7 @@ a) [CTE by Sumit Mittal](https://www.youtube.com/watch?v=zg9GNdX-Q9g&t=6s).
 
 First watch the Above Video and Simulataneously copy the below script in Mysql or Sql Server to create Tables  to Practise the Question.
 
+
 ``` sql
 CREATE TABLE Orders (
     order_id INT PRIMARY KEY,
@@ -60,15 +61,11 @@ VALUES
     (20, '2024-11-15', 120, 'Pending');
 
 ```
+## Question - 1
+1) Find out the total Number of Orders each customers has Placed.
+2) Find out the Average number of Order Placed by each customer. (Average order Per Customer)
+3) Find out the Premium Customers. (Customers who have Placed more number of orders than the Average order).
 
 
-
-
-
-
-Shoutout to both the Creators for their fantastic YouTube Videos for an in-depth exploration of CTE in SQL.
-
-Join my telegram Channel (Curator Prashant) for More such Contents.
-I post regularly about Analytics! 😃
 
 
