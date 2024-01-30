@@ -147,6 +147,30 @@ order_customer_id |	total_orders |	Average_order_per_customer |
 </p>
 
 
+<details>
+  <summary>Click to See the  Query for Question - 3 </summary>
+
+  ``` sql
 
 
+with Total_order (order_customer_id , total_orders) as 
+(
+SELECT ORDER_CUSTOMER_ID, 
+COUNT(*) AS Total_orders
+FROM ORDERS
+GROUP BY order_customer_id)
+,
+Avg_order (Average_order_per_customer) as
+(
+select Avg(Total_orders) As Average_order_per_customer
+from Total_order
+) 
+select 
+* 
+from Total_order , Avg_order
+where total_orders >  Average_order_per_customer;
+
+```
+  </details>
+</p>
 
