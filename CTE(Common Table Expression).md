@@ -28,7 +28,6 @@ a) [CTE by Sumit Mittal](https://www.youtube.com/watch?v=zg9GNdX-Q9g&t=6s).
 
 First watch the Above Video and Simulataneously copy the below script in Mysql or Sql Server to create Tables  to Practise the Question.
 
-
 ``` sql
 CREATE TABLE Orders (
     order_id INT PRIMARY KEY,
@@ -66,6 +65,38 @@ VALUES
 2) Find out the Average number of Order Placed by each customer. (Average order Per Customer)
 3) Find out the Premium Customers. (Customers who have Placed more number of orders than the Average order).
 
+## Answers
 
+<details>
+  <summary>Click to See the Output of Question -1 </summary>
+
+  ##### Expected Results:
+order_customer_id| Total_orders |
+------------     |--------------|
+101              | 5            |
+102	             | 6            |
+103	             | 2            |
+109	             | 3            |
+114	             | 1            |
+115	             | 1            |
+120	             | 2            |
+
+
+</details>
+</p>
+
+<details>
+  <summary>Click to See the  Query for Question - 1 </summary>
+
+``` sql
+SELECT ORDER_CUSTOMER_ID, 
+COUNT(*) AS Total_orders
+FROM ORDERS
+GROUP BY order_customer_id;
+
+``` 
+
+  </details>
+</p>
 
 
