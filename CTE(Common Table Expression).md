@@ -65,6 +65,8 @@ VALUES
 2) Find out the Average number of Order Placed by each customer. (Average order Per Customer)
 3) Find out the Premium Customers. (Customers who have Placed more number of orders than the Average order).
 
+**Note** Try to Solve the above Questions firstly by using Subquery and then Using CTE.You will find that Using Cte is much easier and Helpful.
+
 ## Answers
 
 <details>
@@ -95,6 +97,37 @@ FROM ORDERS
 GROUP BY order_customer_id;
 
 ``` 
+
+  </details>
+</p>
+
+
+<details>
+    
+  <summary>Click to See the Output of Question -2 </summary>
+
+  Average_order_per_customer|
+  --------------------------|
+   2                        | 
+                  
+</details>
+</p>
+
+
+<details>
+  <summary>Click to See the  Query for Question - 2 </summary>
+
+  ``` sql
+with Total_order (order_customer_id , total_orders) as 
+(
+SELECT ORDER_CUSTOMER_ID, 
+COUNT(*) AS Total_orders
+FROM ORDERS
+GROUP BY order_customer_id)
+
+select Avg(Total_orders) As Average_order_per_customer
+from Total_order;
+```
 
   </details>
 </p>
