@@ -133,3 +133,20 @@ from Total_order;
 </p>
 
 
+<details>
+    
+  <summary>Click to See the Output of Question -3 </summary>
+
+order_customer_id |	total_orders |	Average_order_per_customer |
+  ----------------|  ------------|  -------------------------- |
+101	              |5	         | 2                           |
+102               |6	         | 2                           |
+109	              |3	         | 2                           |
+
+  </details>
+</p>
+
+
+
+
+
