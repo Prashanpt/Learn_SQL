@@ -22,10 +22,13 @@ CTE is a powerful feature in SQL that allows us to create temporary result sets,
 
 ## How to Learn and Practise?
 
-a) Sumit Mittal (Youtube Channel - Trendy Tech).
-b) Thoufiq Mohammed (Youtube Channel - TechTFQ).
+Total we will watch two videos , Below is the First Video.
 
-To find their video simply type CTE Sumit Mittal or CTE TechTFQ.
+a) [CTE by Sumit Mittal](https://www.youtube.com/watch?v=zg9GNdX-Q9g&t=6s).
+
+First watch the Above Video and Simulataneously copy the below script in Mysql or Sql Server to create Tables  to Practise the Question.
+
+
 
 Shoutout to both the Creators for their fantastic YouTube Videos for an in-depth exploration of CTE in SQL.
 
